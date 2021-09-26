@@ -1,7 +1,7 @@
  const element = document.getElementById('channel-btns');
  //const fragment = document.createDocumentFragment();
 //var element  = document.getElementById('ul'); // assuming ul exists
-var fragment1 = document.createDocumentFragment();
+const fragment1 = document.createDocumentFragment();
 //var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
 
 Canales.forEach(function(browser) {
