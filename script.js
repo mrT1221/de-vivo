@@ -1,9 +1,9 @@
  const seccionCanales = document.getElementById('channel-btns');
  const fragment = document.createDocumentFragment();
-const fragmentm3u = document.createDocumentFragment();
-     Canales.forEach(canal => {
+ Canales.forEach(canal => {
+	 console.log("a")
     if (canal.url !== undefined && canal.m3u === undefined){
-        const BtnCanal = document.createElement('button');
+        const BtnCanal = document.createElement('li');
             BtnCanal.classList.add('channel');
             BtnCanal.innerHTML = canal.nombre;
             BtnCanal.onclick = () => { // https://stackoverflow.com/questions/3316207/add-onclick-event-to-newly-added-element-in-javascript
@@ -16,7 +16,7 @@ const fragmentm3u = document.createDocumentFragment();
                     a.innerText = canal.nombre;
                 document.querySelector('.nombre-barra').append(a);
             };
-        fragment.append(BtnCanal);
+        fragment.appendChild(BtnCanal);
     } else if (canal.url === undefined && canal.m3u !== undefined){
         const BtnCanalM3u = document.createElement('button');
             BtnCanalM3u.classList.add('channel');
@@ -25,7 +25,7 @@ const fragmentm3u = document.createDocumentFragment();
             BtnCanalM3u.onclick = () => {
                 iframe.remove();
                 nombreM3u.remove();  
-                videoContainer.append(divm3u)
+                videoContainer.appendChild(divm3u)
                 let m3uplayer = videojs(document.querySelector('.m3u-player'));
                     m3uplayer.src( {
                         src: canal.m3u,
@@ -38,8 +38,8 @@ const fragmentm3u = document.createDocumentFragment();
                 a.innerText = canal.nombre;
             document.querySelector('.nombre-barra').append(a);
             }
-        fragment.append(BtnCanalM3u);
+        fragment.appendChild(BtnCanalM3u);
     }
 });
      
-seccionCanales.append(fragment);
+seccionCanales.appendChild(fragment);
