@@ -6,7 +6,7 @@ var fragment1 = document.createDocumentFragment();
 
 Canales.forEach(function(browser) {
     var li = document.createElement('li');
-    li.textContent = browser;
+    li.textContent = browser.nombre;
     fragment1.appendChild(li);
 });
 
