@@ -4,9 +4,9 @@
 const fragment1 = document.createDocumentFragment();
 //var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
 
-Canales.forEach(function(browser) {
+Canales.forEach(canal => {
     var li = document.createElement('li');
-    li.textContent = browser.nombre;
+    li.textContent = canal.nombre;
     fragment1.appendChild(li);
 });
 
