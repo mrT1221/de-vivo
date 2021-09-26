@@ -5,12 +5,13 @@ const fragment1 = document.createDocumentFragment();
 //var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
 
 Canales.forEach(canal => {
-    const li = document.createElement('li');
-    li.textContent = canal.nombre;
-    fragment1.appendChild(li);
+    //const li = document.createElement('li');
+    //li.textContent = canal.nombre;
+    //fragment1.appendChild(li);
+	console.log('a');
 });
 
-element.appendChild(fragment1);
+//element.appendChild(fragment1);
  /*
  Canales.forEach(canal => {
 	 console.log("a")
