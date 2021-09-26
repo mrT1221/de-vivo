@@ -19,7 +19,7 @@
 			}
         Canales.forEach(language => {
             let li = document.createElement('li');
-			li.appendChild(createMenuItem(language.url,language.nombre,language.url));
+			li.appendChild(createMenuItem(language.url,language.nombre,language.imgUrl));
 			
            // li.innerHTML = language.nombre;
             fragment.appendChild(li);
