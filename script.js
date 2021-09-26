@@ -1,17 +1,32 @@
- const element = document.getElementById('channel-btns');
- //const fragment = document.createDocumentFragment();
-//var element  = document.getElementById('ul'); // assuming ul exists
-const fragment1 = document.createDocumentFragment();
-//var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
+ window.onload = function(){
+ let langEl =document.getElementById('channel-btns');
+        //let fragment = new DocumentFragment();
+		const fragment = document.createDocumentFragment();
+		function createMenuItem(src, alt, title) {
+            let a = document.createElement('a');
+			
+            a.textContent = name;
+            a.href = src;
+			a.appendChild(img_create(src, alt, title));
+            return a;
+        }
+		function img_create(src, alt, title) {
+				var img = document.createElement('img');
+				img.src = src;
+				if ( alt != null ) img.alt = alt;
+				if ( title != null ) img.title = title;
+				return img;
+			}
+        Canales.forEach(language => {
+            let li = document.createElement('li');
+			li.appendChild(createMenuItem(language.url,language.nombre,language.url));
+			
+           // li.innerHTML = language.nombre;
+            fragment.appendChild(li);
+        })
 
-Canales.forEach(canal => {
-    const 	li = document.createElement('li');
-			li.textContent = canal.nombre;
-			fragment1.append(li);
-	console.log('a');
-});
-
-element.appendChild(fragment1);
+        langEl.appendChild(fragment);
+ };
  /*
  Canales.forEach(canal => {
 	 console.log("a")
