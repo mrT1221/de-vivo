@@ -5,8 +5,7 @@
 		function createMenuItem(src, alt, title, urlImg) {
             let a = document.createElement('a');
 			
-            a.textContent = name;
-            a.href = src;
+                        a.href = src;
 			a.appendChild(img_create(urlImg, alt, title));
             return a;
         }
