@@ -1,5 +1,5 @@
  const element = document.getElementById('channel-btns');
- const fragment = document.createDocumentFragment();
+ //const fragment = document.createDocumentFragment();
 //var element  = document.getElementById('ul'); // assuming ul exists
 var fragment = document.createDocumentFragment();
 //var browsers = ['Firefox', 'Chrome', 'Opera',
