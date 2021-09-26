@@ -1,13 +1,13 @@
- const element = document.getElementById('channel-btns');
+ const element = document.getElementById('ul#channel-btns');
  //const fragment = document.createDocumentFragment();
 //var element  = document.getElementById('ul'); // assuming ul exists
 const fragment1 = document.createDocumentFragment();
 //var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
 
 Canales.forEach(canal => {
-    //const li = document.createElement('li');
-    //li.textContent = canal.nombre;
-    //fragment1.appendChild(li);
+    const 	li = document.createElement('li');
+			li.textContent = canal.nombre;
+			fragment1.append(li);
 	console.log('a');
 });
 
