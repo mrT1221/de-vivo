@@ -1,4 +1,6 @@
- const seccionCanales = document.getElementById(&#39;channel-btns&#39;);
+ const seccionCanales = document.getElementById('channel-btns&');
+ const fragment = document.createDocumentFragment();
+const fragmentm3u = document.createDocumentFragment();
      Canales.forEach(canal => {
     if (canal.url !== undefined && canal.m3u === undefined){
         const BtnCanal = document.createElement('button');
@@ -40,3 +42,4 @@
     }
 });
      
+seccionCanales.append(fragment);
