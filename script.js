@@ -1,4 +1,4 @@
- const element = document.getElementById('ul#channel-btns');
+ const element = document.getElementById('channel-btns');
  //const fragment = document.createDocumentFragment();
 //var element  = document.getElementById('ul'); // assuming ul exists
 const fragment1 = document.createDocumentFragment();
@@ -11,7 +11,7 @@ Canales.forEach(canal => {
 	console.log('a');
 });
 
-//element.appendChild(fragment1);
+element.appendChild(fragment1);
  /*
  Canales.forEach(canal => {
 	 console.log("a")
