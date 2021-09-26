@@ -1,5 +1,18 @@
- const seccionCanales = document.getElementById('channel-btns');
+ const element = document.getElementById('channel-btns');
  const fragment = document.createDocumentFragment();
+//var element  = document.getElementById('ul'); // assuming ul exists
+var fragment = document.createDocumentFragment();
+//var browsers = ['Firefox', 'Chrome', 'Opera',
+    'Safari', 'Internet Explorer'];
+
+Canales.forEach(function(browser) {
+    var li = document.createElement('li');
+    li.textContent = browser;
+    fragment.appendChild(li);
+});
+
+element.appendChild(fragment);
+ /*
  Canales.forEach(canal => {
 	 console.log("a")
     if (canal.url !== undefined && canal.m3u === undefined){
@@ -42,4 +55,4 @@
     }
 });
      
-seccionCanales.appendChild(fragment);
+seccionCanales.appendChild(fragment);*/
