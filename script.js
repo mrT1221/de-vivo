@@ -2,12 +2,12 @@
  let langEl =document.getElementById('channel-btns');
         //let fragment = new DocumentFragment();
 		const fragment = document.createDocumentFragment();
-		function createMenuItem(src, alt, title) {
+		function createMenuItem(src, alt, title, urlImg) {
             let a = document.createElement('a');
 			
             a.textContent = name;
             a.href = src;
-			a.appendChild(img_create(src, alt, title));
+			a.appendChild(img_create(urlImg, alt, title));
             return a;
         }
 		function img_create(src, alt, title) {
@@ -19,7 +19,7 @@
 			}
         Canales.forEach(language => {
             let li = document.createElement('li');
-			li.appendChild(createMenuItem(language.url,language.nombre,language.imgUrl));
+			li.appendChild(createMenuItem(language.url,language.nombre,'',language.imgUrl));
 			
            // li.innerHTML = language.nombre;
             fragment.appendChild(li);
