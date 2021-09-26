@@ -2,8 +2,7 @@
  //const fragment = document.createDocumentFragment();
 //var element  = document.getElementById('ul'); // assuming ul exists
 var fragment1 = document.createDocumentFragment();
-//var browsers = ['Firefox', 'Chrome', 'Opera',
-    'Safari', 'Internet Explorer'];
+//var browsers = ['Firefox', 'Chrome', 'Opera','Safari', 'Internet Explorer'];
 
 Canales.forEach(function(browser) {
     var li = document.createElement('li');
