@@ -1,4 +1,4 @@
- const seccionCanales = document.getElementById('channel-btns&');
+ const seccionCanales = document.getElementById('channel-btns');
  const fragment = document.createDocumentFragment();
 const fragmentm3u = document.createDocumentFragment();
      Canales.forEach(canal => {
