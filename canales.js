@@ -9,8 +9,13 @@ const Canales = [{
         'imgUrl': 'https://tele-vivo.github.io/de-vivo/ESPN.png'
      },
     {
-        'nombre': '🏛️ ESPN 2 Mexico',
+        'nombre': '🏛️ latina TV',
         'url': '/2021/09/ESPN-2-Mexico-En-Vivo.html',
         'imgUrl': 'https://tele-vivo.github.io/de-vivo/ESPN_2.png'
+    },
+    {
+        'nombre': '🏛️ ESPN 2 Mexico',
+        'url': '/2021/09/latina-tv-en-vivo.html',
+        'imgUrl': 'https://tele-vivo.github.io/de-vivo/LatinaTV.jpg'
     }
 ]
