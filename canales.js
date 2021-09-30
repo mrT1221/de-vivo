@@ -17,5 +17,10 @@ const Canales = [{
         'nombre': '🏛️ ESPN 2 Mexico',
         'url': '/2021/09/latina-tv-en-vivo.html',
         'imgUrl': 'https://tele-vivo.github.io/de-vivo/LatinaTV.jpg'
+    },
+    {
+        'nombre': '🏛️ Tyc Sports',
+        'url': '/2021/09/tyc-sports-en-vivo-full-hd.html',
+        'imgUrl': 'https://tele-vivo.github.io/de-vivo/tycsports.jpg'
     }
 ]
