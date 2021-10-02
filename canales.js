@@ -32,5 +32,10 @@ const Canales = [{
         'nombre': '🏛️ America 24 en Vivo HD',
         'url': '/2021/09/telefe-en-vivo-hd.html',
         'imgUrl': 'https://tele-vivo.github.io/de-vivo/telefehd.png'
+    },
+                 {
+        'nombre': '🏛️ FOX SPORTS EN VIVO HD',
+        'url': '2021/10/fox-sports-mexico-en-vivo.html.html',
+        'imgUrl': 'https://tele-vivo.github.io/de-vivo/foxsports.png'
     }
 ]
