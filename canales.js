@@ -35,7 +35,7 @@ const Canales = [{
     },
                  {
         'nombre': '🏛️ FOX SPORTS EN VIVO HD',
-        'url': '2021/10/fox-sports-mexico-en-vivo.html.html',
+        'url': '/2021/10/fox-sports-mexico-en-vivo.html.html',
         'imgUrl': 'https://tele-vivo.github.io/de-vivo/foxsports.png'
     }
 ]
